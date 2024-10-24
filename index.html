@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript is Fun😃</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="onLoad()">
+    <h1>JavaScript is Fun😃</h1>
+    <button ondblclick="Subscribe()" id="btn">Subscribe</button>
+    <h2 id="text"></h2>
+    <form action="" id="form" onkeypress="keyPress()">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter Your Name">
+        <label for="">Email</label>
+        <input type="text" placeholder="Enter Your Email">
+        <label for="">Message</label>
+        <textarea placeholder="Enter Your Message"></textarea>
+        <input type="Submit" value="Send Message">
+    </form>
+    
+    <script>
+        function Subscribe() {
+            // document.getElementById('text').innerHTML = 'Subscribed';
+            // document.getElementById('btn').innerHTML = 'Subscribed';
+            document.getElementById('btn').style.backgroundColor = '#262626';
+            
+        }
+        document.getElementById('btn').ondblclick=function(){
+            document.getElementById('btn').innerHTML='Scbscribed'
+        }
+
+
+        function keyPress(){
+            document.getElementById("text").innerHTML='Key Presed😊';
+        }
+        function onLoad(){
+            // alert('Testing javascript Onload')
+            document.getElementById("text").innerHTML='Website Loeaded Properly😍 ';
+        }
+        
+    </script>
+</body>
+</html>
